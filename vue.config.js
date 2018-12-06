@@ -89,24 +89,20 @@ if (process.env.NO_PROXY === 'true') {
     ...config.devServer,
     proxy: {
       '/v1/user/': {
-        target: 'http://young.chinaso.com/',
-        // target: 'http://10.10.128.122:9000/',
+        target: 'http://test.test.com/',
         // pathRewrite: { '^/v1/user/': '' },
         secure: false,
         changeOrigin: true,
         // 注：ie下设置localhost的cookie无效，改为空，与网页域名一致，待测试
         cookieDomainRewrite: {
-          'chinaso.com': ''
+          'test.com': ''
         }
       },
       '/stream/': {
-        target: 'http://young.chinaso.com/',
+        target: 'http://test.test.com/',
         // pathRewrite: { '^/user/': '' },
         secure: false,
         changeOrigin: true,
-        cookieDomainRewrite: {
-          'chinaso.com': 'localhost'
-        },
         logLevel: 'debug'
       }
     }

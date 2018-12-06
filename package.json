@@ -8,7 +8,6 @@
     "serve:prod": "set NO_PROXY=true&&vue-cli-service serve --mode=production",
     "build": "vue-cli-service build",
     "rsync": "npm run build && rsync -to younghtml/mp/",
-    "rsync118": "npm run build && rsync -to younghtml/mp/ -host 10.10.128.118",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit"
   },
