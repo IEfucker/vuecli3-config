@@ -13,7 +13,6 @@
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.0.0",
     "@cnpm/url": "^0.1.1",
     "axios": "^0.18.0",
     "debug": "^4.0.1",
